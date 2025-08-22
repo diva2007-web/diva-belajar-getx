@@ -51,6 +51,22 @@ class HomeView extends GetView<HomeController> {
               color: Colors.deepPurple,
               onTap: () => Get.toNamed("/penjualan"),
             ),
+
+            // ✅ Menu Post
+            _buildMenuCard(
+              icon: Icons.article,
+              label: "Posts",
+              color: Colors.orange,
+              onTap: () => Get.toNamed("/post"),
+            ),
+
+            // album
+            _buildMenuCard(
+              icon: Icons.photo_album,
+              label: "Allbum",
+              color: const Color.fromARGB(255, 110, 106, 148),
+              onTap: () => Get.toNamed("/album"),
+            ),
           ],
         ),
       ),
